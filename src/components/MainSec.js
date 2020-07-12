@@ -5,6 +5,7 @@ import shoe1 from "../images/nike1.png";
 import shoe2 from "../images/nike2.jpg";
 import shoe3 from "../images/nike3.jpg";
 import Slider from "infinite-react-carousel";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   parentCard: {
@@ -34,6 +35,7 @@ const MainSec = () => {
   const classes = useStyles();
   const products = [
     {
+      shoeID: "shoe1",
       model: "Nike Air Verona",
       type: "Women's Shoe",
       price: "$130",
@@ -43,14 +45,18 @@ const MainSec = () => {
     },
 
     {
+      shoeID: "shoe2",
+
       model: "Nike Air Max 2090",
       type: "Men's Shoe",
       price: "$150",
       imgSrc: shoe2,
       desc:
-        "Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA of the iconic Air Max 90. Brand-new Nike Air cushioning underfoot adds unparalleled comfort while transparent mesh and vibrantly colored textile on select colorways blend with timeless OG features for an edgy, modernized look. ",
+        "Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA of the iconic Air Max 90. ",
     },
     {
+      shoeID: "shoe3",
+
       model: "Nike Air Max 270 React ENG ",
       type: "Women's Shoe",
       price: "$170",
@@ -105,7 +111,12 @@ const MainSec = () => {
                 <Typography style={{ marginTop: 1 + "rem" }}>
                   {shoe.desc}
                 </Typography>
-                <Button className={classes.readBtn}>Read More</Button>
+                <Link
+                  style={{ textDecoration: "none", color: "white" }}
+                  to={`products/${shoe.shoeID}`}
+                >
+                  <Button className={classes.readBtn}>Read More</Button>
+                </Link>
               </Grid>
 
               <Grid xs={6} item>

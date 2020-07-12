@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Typography } from "@material-ui/core";
 const shoes = {
   shoe1: {
     model: "Nike Air Max Verona",
@@ -104,13 +105,27 @@ const shoes = {
 
 const ProductDetails = () => {
   const { productID } = useParams();
-  console.log(shoes[productID]);
+  const curShoe = shoes[productID];
 
   return (
-    <div>
-      hello this is product details page of{" "}
-      {Object.entries(shoes).map(([key, value]) => (
-        <h1>{value.name}</h1>
+    <div style={{ padding: "3rem" }}>
+      <Typography
+        variant="h3"
+        style={{ borderLeft: "8px solid #0088A8", paddingLeft: "1rem" }}
+      >
+        {curShoe.model}
+      </Typography>
+      <br />
+      <Typography>{curShoe.about}</Typography>
+      <br />
+      <Typography variant="h6">Benefits:</Typography>
+      {curShoe.benefits.map((benefit, index) => (
+        <li>{benefit}</li>
+      ))}
+      <br />
+      <Typography variant="h6">Details:</Typography>
+      {curShoe.details.map((detail, index) => (
+        <li>{detail}</li>
       ))}
     </div>
   );
