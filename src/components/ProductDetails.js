@@ -4,6 +4,7 @@ import { Typography } from "@material-ui/core";
 const shoes = {
   shoe1: {
     model: "Nike Air Max Verona",
+    price: "$130",
     about:
       "Pass on the good vibes in the Nike Air Max Verona. Elegant and versatile, its mixed-material upper features a plush collar, flashy colours and unique stitching patterns. The Nike Air cushioning adds a modern twist, comfort and style to your journey.",
     benefits: [
@@ -23,6 +24,7 @@ const shoes = {
   },
   shoe2: {
     model: "Nike Air Max 2090",
+    price: "$150",
     about:
       "Bring the past into the future with the Nike Air Max 2090, a bold look inspired by the DNA of the iconic Air Max 90. Brand-new Nike Air cushioning underfoot adds unparalleled comfort while transparent fabric on the upper is blended with timeless OG features for an edgy, modernised look.",
     benefits: [
@@ -43,6 +45,7 @@ const shoes = {
   },
   shoe3: {
     model: "Nike Air Max 270 React ENG",
+    price: "$170",
     about:
       "Nike's first lifestyle Air Max meets the softest, smoothest and most resilient foam yet in the Nike Air Max 270 React ENG. The design draws inspiration from the Air Max pantheon, showcasing Nike's greatest innovation with its large window and fresh array of colors.",
     benefits: [
@@ -63,6 +66,7 @@ const shoes = {
   },
   shoe4: {
     model: "Nike Air Max Plus",
+    price: "$230",
     about:
       "Give your attitude an edge in the Nike Air Max Plus, a Tuned Air experience that's been delivering comfort and street cred since '98. Featuring a futuristic, multi-textured upper, visible Max Air cushioning and Tuned Air graphics on the outsole and heel clip, it sets you up with high-tech comfort everyone can see.",
     benefits: [
@@ -83,6 +87,7 @@ const shoes = {
   },
   shoe5: {
     model: "Nike Air Max Plus 3",
+    price: "$250",
     about:
       "Featuring the same Tuned Air technology as its predecessors, the Nike Air Max Plus 3 updates the look with TPU fused to the upper while paying homage to the iconic colour fade of the OG.",
     benefits: [
@@ -116,6 +121,7 @@ const ProductDetails = () => {
         {curShoe.model}
       </Typography>
       <br />
+      <Typography variant="h6">Price : {curShoe.price}</Typography>
       <Typography>{curShoe.about}</Typography>
       <br />
       <Typography variant="h6">Benefits:</Typography>

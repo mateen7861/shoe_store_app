@@ -39,9 +39,9 @@ const Contact = () => {
             <br />
             <TextField id="outlined-basic" label="Email Address" />
             <br />
-            <TextField id="outlined-basic" label="Your Name" />
+            <TextField id="outlined-basic" label="Contact Number" />
             <br />
-            <TextField id="outlined-basic" label="Email Address" />
+            <TextField id="outlined-basic" label="Your Address" />
             <br />
           </form>
           <br />
