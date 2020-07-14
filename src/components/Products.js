@@ -15,8 +15,7 @@ const useStyles = makeStyles({
   parentCard: {
     backgroundColor: "#F5F5F5",
     marginBottom: 50 + "px",
-    paddingTop: 2 + "rem",
-    paddingLeft: 2 + "rem",
+    padding: 2 + "rem",
   },
   imgShoe: {
     width: 90 + "%",
@@ -141,7 +140,7 @@ const Products = () => {
               >
                 {shoe.price}
               </span>
-              <Typography style={{ marginTop: 1 + "rem" }}>
+              <Typography variant="body1" style={{ marginTop: 1 + "rem" }}>
                 {shoe.desc}
               </Typography>
               <Link
