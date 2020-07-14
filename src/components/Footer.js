@@ -13,7 +13,6 @@ const Footer = () => {
         backgroundColor: "#24252A",
         color: "white",
         padding: "30px",
-        boxSizing: "border-box",
       }}
       container
     >

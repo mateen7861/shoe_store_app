@@ -117,7 +117,7 @@ const Products = () => {
             direction="row"
             justify="space-between"
           >
-            <Grid item xs={5}>
+            <Grid item xs={12} md={5}>
               <Typography
                 style={{
                   borderLeft: "8px solid #0088A8",
@@ -152,7 +152,7 @@ const Products = () => {
               </Link>
             </Grid>
 
-            <Grid xs={6} item>
+            <Grid xs={12} md={5} item>
               <img className={classes.imgShoe} src={shoe.imgSrc}></img>
             </Grid>
           </Grid>

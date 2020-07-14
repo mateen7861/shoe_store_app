@@ -57,7 +57,7 @@ const MainSec = () => {
     {
       shoeID: "shoe3",
 
-      model: "Nike Air Max 270 React ENG ",
+      model: "Nike Air Max 270",
       type: "Women's Shoe",
       price: "$170",
       imgSrc: shoe3,
@@ -83,7 +83,7 @@ const MainSec = () => {
               direction="row"
               justify="space-between"
             >
-              <Grid item xs={5}>
+              <Grid item xs={12} md={5}>
                 <Typography
                   style={{
                     borderLeft: "8px solid #0088A8",
@@ -101,7 +101,7 @@ const MainSec = () => {
                 <Typography className={classes.typet}>{shoe.type}</Typography>
                 <span
                   style={{
-                    fontSize: "1.4rem",
+                    fontSize: "1.5rem",
                     fontWeight: "bolder",
                     marginLeft: "30px",
                   }}
@@ -119,7 +119,7 @@ const MainSec = () => {
                 </Link>
               </Grid>
 
-              <Grid xs={6} item>
+              <Grid xs={12} md={5} item>
                 <img className={classes.imgShoe} src={shoe.imgSrc}></img>
               </Grid>
             </Grid>
