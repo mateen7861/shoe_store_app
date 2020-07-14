@@ -23,13 +23,21 @@ const Footer = () => {
         <Typography>
           Pakistan's top online shoe store.Known for quality.
         </Typography>
-        <img style={{ width: 22 + "px", marginTop: ".8rem" }} src={phone}></img>
+        <img
+          style={{ width: 22 + "px", marginTop: ".8rem" }}
+          alt="icon"
+          src={phone}
+        ></img>
         <span style={{ fontSize: "1.5rem", paddingLeft: ".5rem" }}>
           +923081607123
         </span>
         <br></br>
 
-        <img style={{ width: 22 + "px", marginTop: ".8rem" }} src={mail}></img>
+        <img
+          alt="icon"
+          style={{ width: 22 + "px", marginTop: ".8rem" }}
+          src={mail}
+        ></img>
         <span style={{ fontSize: "1.5rem", paddingLeft: ".5rem" }}>
           mateeneorld7861@gmail.com
         </span>
@@ -38,12 +46,14 @@ const Footer = () => {
 
         <a href="https://www.facebook.com/mateen.blaster.5">
           <img
+            alt="icon"
             style={{ width: "30px", marginRight: ".7rem" }}
             src={facebook}
           ></img>
         </a>
 
         <img
+          alt="icon"
           style={{ width: "30px", marginRight: ".7rem" }}
           src={twitter}
         ></img>

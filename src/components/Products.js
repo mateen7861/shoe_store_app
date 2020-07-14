@@ -153,7 +153,11 @@ const Products = () => {
             </Grid>
 
             <Grid xs={12} md={5} item>
-              <img className={classes.imgShoe} src={shoe.imgSrc}></img>
+              <img
+                className={classes.imgShoe}
+                src={shoe.imgSrc}
+                alt={shoe.model}
+              ></img>
             </Grid>
           </Grid>
         </div>

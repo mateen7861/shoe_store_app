@@ -29,6 +29,7 @@ const About = () => {
       </div>
       <div style={{ display: "flex", justifyContent: "space-around" }}>
         <img
+          alt="mateen"
           src={mateen}
           style={{
             width: 18 + "rem",
