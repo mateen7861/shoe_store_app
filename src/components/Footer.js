@@ -57,7 +57,7 @@ const Footer = () => {
           style={{ width: "30px", marginRight: ".7rem" }}
           src={twitter}
         ></img>
-        <img style={{ width: "30px" }} src={linkedin}></img>
+        <img style={{ width: "30px" }} src={linkedin} alt="icon"></img>
       </Grid>
       <Grid xs={6} item>
         <Typography variant="h5">Quick Links</Typography>
